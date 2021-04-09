@@ -1,4 +1,5 @@
 .hero {
+  padding: 118px 0px;
   margin: 0 auto;
   text-align: center;
   background: var(--hero-color);
@@ -23,7 +24,6 @@
 
 @media screen and (max-width: 767px) {
   .hero {
-    padding: 118px 0px;
     width: 480px;
     height: 400px;
     background-image: url('../images/mobile/header-phone.jpg');
@@ -47,9 +47,8 @@
 @media screen and (min-width: 768px) {
   .hero {
     text-align: center;
-
-    padding: 118px 0px;
-    max-width: 768px;
+    margin: 0 auto;
+    width: 768px;
     min-height: 400px;
     background-image: url('../images/tablet/header-tablet.jpg');
     background-size: 768px 400px;
@@ -66,10 +65,8 @@
 
 @media screen and (min-width: 1600px) {
   .hero {
-    margin: 0 auto;
-    text-align: center;
     padding: 200px 0px;
-    max-width: 1600px;
+    width: 1600px;
     min-height: 600px;
     background-image: url('../images/desktop/header-desktop.jpg');
     background-size: 768px 400px;
