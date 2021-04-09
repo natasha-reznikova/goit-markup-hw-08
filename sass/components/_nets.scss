@@ -1,0 +1,55 @@
+.networks {
+  display: flex;
+  justify-content: space-between;
+
+  &_light-theme {
+    margin: 0 auto;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  &_dark-theme :not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icons {
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &_light-theme {
+      background-color: var(--first-text-color);
+      fill: var(--net-color);
+
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+        fill: var(--first-text-color);
+      }
+    }
+
+    &_dark-theme {
+      background-color: rgba(255, 255, 255, 0.1);
+      fill: var(--first-text-color);
+
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+      }
+    }
+  }
+}
