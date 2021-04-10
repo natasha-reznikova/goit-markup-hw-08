@@ -22,10 +22,9 @@
   margin-top: 50px;
 
   &__item {
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: calc(100% / 6 - 30px);
+    /*flex-basis: calc(100% / 6 - 30px);*/
     margin-left: 30px;
   }
 
@@ -56,5 +55,23 @@
     .clients__link:focus & {
       fill: var(--accent-color);
     }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients {
+    flex-wrap: wrap;
+  }
+
+  /*
+  .clients__item {
+    flex-basis: calc(100% / 2 -30px);
+  }
+  */
+}
+
+@media screen and (min-width: 1600px) {
+  .clients__item {
+    flex-basis: calc(100% / 6 - 30px);
   }
 }
