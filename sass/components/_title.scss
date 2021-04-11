@@ -6,3 +6,15 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+@media screen and (max-width: 1599px) {
+  .title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}

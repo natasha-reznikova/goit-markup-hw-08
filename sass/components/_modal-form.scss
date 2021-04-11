@@ -45,7 +45,7 @@
     letter-spacing: 0.01em;
     color: var(--second-text-color);
   }
-  &__conteiner {
+  &__container {
     position: relative;
     display: block;
   }
@@ -95,7 +95,7 @@
   }
   &__check {
     display: flex;
-    font-size: 14px;
+    align-items: center;
 
     &::before {
       display: block;
@@ -113,5 +113,18 @@
         border-color: var(--accent-color);
       }
     }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .modal-form__check {
+    font-size: 12px;
+    line-height: 1.14px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .modal-form__check {
+    font-size: 14px;
+    line-height: 1.71px;
   }
 }
