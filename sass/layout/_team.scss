@@ -2,6 +2,113 @@
   padding-bottom: 60px;
   padding-top: 60px;
   background: var(--team-buttons-color);
+  margin: 0 auto;
+}
+
+.member {
+  &__inform {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #eeeeee;
+    background-color: var(--first-text-color);
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+
+  &__position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .member__foto {
+    width: 450px;
+    height: 460px;
+  }
+
+  .member__inform {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member__foto {
+    width: 330px;
+    height: 364px;
+  }
+
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: 30px;
+  }
+
+  .member__inform {
+    width: 330px;
+  }
+
+  .member {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+
+  .member:nth-child(n + 1) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .member__foto {
+    width: 270px;
+    height: 260px;
+  }
+
+  .team__list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -30px;
+  }
+
+  .member__inform {
+    width: 100%;
+  }
+  .member {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+  }
+
+  .team {
+    padding-bottom: var(--section-pb);
+    padding-top: var(--section-pt);
+  }
+}
+
+.member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*
+.team {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background: var(--team-buttons-color);
 }
 
 .member-card {
@@ -61,22 +168,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .member {
-    margin-right: -30px;
-  }
-  .member__foto {
-    width: 354px;
-    height: 374px;
-  }
-
   .team__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+  }
+  .member-card {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
   }
 
-  .member {
-    width: calc(100% / 2 -30px);
-    margin-right: 30px;
+  .member__foto {
+    width: 354px;
+    height: 374px;
   }
 }
 
