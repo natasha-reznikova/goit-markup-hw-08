@@ -1,13 +1,6 @@
-.portfolio {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
-}
-
 .btn-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
 
   &__item {
     padding: 6px 22px;
@@ -35,8 +28,41 @@
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 
-    &:not(:first-child) {
-      margin-left: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
     }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .btn-list {
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .btn-list__text {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio {
+    padding-top: var(--section-pt);
+    padding-bottom: var(--section-pb);
+  }
+
+  .btn-list {
+    margin-bottom: 50px;
   }
 }

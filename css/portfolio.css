@@ -386,16 +386,9 @@ img {
   overflow: hidden;
 }
 
-.portfolio {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
-}
-
 .btn-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
 }
 
 .btn-list__item {
@@ -423,29 +416,95 @@ img {
   color: var(--main-text-color);
 }
 
-.btn-list__text:not(:first-child) {
-  margin-left: 8px;
+.btn-list__text:not(:last-child) {
+  margin-right: 8px;
 }
 
-.gallary {
-  display: flex;
-  margin-left: -30px;
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) {
+  .btn-list {
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .btn-list__text {
+    margin-top: 15px;
+  }
 }
 
-.gallary__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+  }
 }
 
-.gallary__item:hover, .gallary__item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@media screen and (min-width: 1600px) {
+  .portfolio {
+    padding-top: var(--section-pt);
+    padding-bottom: var(--section-pb);
+  }
+  .btn-list {
+    margin-bottom: 50px;
+  }
 }
 
-.gallary__item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .gallary {
+    justify-content: center;
+  }
+  .gallary-photo {
+    width: 100%;
+    height: 294px;
+  }
+  .gallary__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .gallary {
+    display: flex;
+    margin-left: -30px;
+    flex-wrap: wrap;
+  }
+  .gallary-photo .gallary__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .gallary__item:hover,
+  .gallary__item:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .gallary__item:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .gallary {
+    margin-left: -30px;
+    flex-wrap: wrap;
+
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      &:nth-child(-n + 6) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+*/
 .picture {
   position: relative;
   overflow: hidden;
