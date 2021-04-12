@@ -5,7 +5,6 @@
 
 .current {
   position: relative;
-
   &::after {
     position: absolute;
     display: block;
@@ -140,6 +139,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+  }
+
   .mobile-menu__button {
     display: none;
   }
@@ -151,16 +154,6 @@
   .header .container {
     justify-content: space-between;
   }
-  /*
-  .menu {
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu__item:not(:last-child) {
-    margin-right: 50px;
-  }
-  */
 
   .contact__icon {
     margin-right: 8px;

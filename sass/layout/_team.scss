@@ -41,8 +41,7 @@
 
 @media screen and (max-width: 767px) {
   .member__foto {
-    width: 450px;
-    height: 460px;
+    width: 100%;
   }
 
   .member__inform {
@@ -63,7 +62,6 @@
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
     margin-top: -30px;
   }
 
