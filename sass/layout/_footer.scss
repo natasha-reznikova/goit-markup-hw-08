@@ -1,7 +1,6 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
   background: var(--footer-color);
 }
 
@@ -52,7 +51,6 @@
 
 .form-mailling__mail {
   padding-left: 16px;
-  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -82,13 +80,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-cont {
-    text-align: center;
-  }
-
   .address {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .form-mailling__mail {
+    width: 100%;
   }
 }
 
@@ -101,9 +99,17 @@
     padding-left: 76px;
     padding-right: 89px;
   }
+
+  .form-mailling__mail {
+    width: 450px;
+  }
+  .main-btn_footer {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form-mailling__mail {
     width: 358px;
     margin-right: 12px;
@@ -138,97 +144,3 @@
     text-align: left;
   }
 }
-
-/*
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin: 0 auto;
-  background: var(--footer-color);
-
-  &-cont {
-    display: flex;
-    align-items: baseline;
-  }
-
-  &-icons {
-    margin-left: 70px;
-  }
-
-  &-form {
-    margin-left: 93px;
-  }
-}
-
-.address {
-  margin-top: 20px;
-  width: 221px;
-
-  &__link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  &__city {
-    color: var(--first-text-color);
-  }
-
-  &__item:not(:first-child) {
-    margin-top: 9px;
-  }
-
-}
-
-.add-to-us {
-  margin-bottom: 20px;
-  display: block;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--first-text-color);
-}
-
-.mailling {
-  margin-bottom: 20px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--first-text-color);
-}
-
-.form-mailling__mail {
-  margin-right: 12px;
-  width: 357px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: var(--footer-color);
-  outline: none;
-  padding-left: 16px;
-  color: var(--first-text-color);
-
-  &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
-
-.form-mailling__icon {
-  margin-left: 10px;
-}
-
-.form-mailling__text {
-  display: flex;
-}
-
-*/

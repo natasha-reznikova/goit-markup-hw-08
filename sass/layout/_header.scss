@@ -3,6 +3,10 @@
   justify-content: space-between;
 }
 
+.contact__link {
+  align-items: center;
+}
+
 .current {
   position: relative;
   &::after {
@@ -25,6 +29,7 @@
   }
   .contact {
     display: none;
+    align-items: center;
   }
 
   .header .container {
@@ -209,7 +214,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact {
     display: flex;
     margin-left: auto;
