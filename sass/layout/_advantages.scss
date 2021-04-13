@@ -11,14 +11,16 @@
 .advantages-list__item {
   margin-bottom: 30px;
   width: 100%;
+  align-content: center;
 }
 
 .advantages-list__cont {
+  display: flex;
+
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   height: 120px;
-  width: 100%;
   background-color: var(--team-buttons-color);
   border: none;
   border-radius: 4px;
@@ -43,8 +45,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .advantages-list__cont {
-    padding: 25px 192px;
+  .advantages-list__item {
     width: 100%;
   }
 
@@ -71,13 +72,12 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .advantages-info {
     padding-top: var(--section-pt);
     padding-bottom: var(--section-pb);
   }
-
-  .advantages-list__item {
-    max-width: 270px;
+  .advantages-list {
+    flex-wrap: nowrap;
   }
 }

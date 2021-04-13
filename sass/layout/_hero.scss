@@ -62,14 +62,14 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    width: 1200px;
     height: 600px;
     padding-top: 200px;
 
     background-image: url('../images/desktop/header-desktop.jpg');
-    background-size: 1600px 600px;
+    background-size: 1200px 600px;
   }
 
   .hero .container {

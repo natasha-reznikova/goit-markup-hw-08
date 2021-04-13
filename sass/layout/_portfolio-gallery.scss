@@ -1,6 +1,7 @@
 .picture {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .about-element {
@@ -59,6 +60,10 @@
   .gallary__item:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -74,7 +79,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .gallary__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
