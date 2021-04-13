@@ -106,6 +106,7 @@
     max-width: 480px;
     width: 100vw;
     height: 100vh;
+    z-index: 2;
     background-color: var(--first-text-color);
     transform: translateY(-100%);
   }

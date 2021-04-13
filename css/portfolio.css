@@ -182,6 +182,7 @@ img {
     max-width: 480px;
     width: 100vw;
     height: 100vh;
+    z-index: 2;
     background-color: var(--first-text-color);
     transform: translateY(-100%);
   }
@@ -636,7 +637,6 @@ img {
 
 .form-mailling__mail {
   padding-left: 16px;
-  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -665,31 +665,32 @@ img {
   .add-to-us {
     margin-top: 60px;
   }
+  .form-mailling__mail {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .unit {
     text-align: center;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 89px;
+    justify-content: center;
     margin-bottom: 60px;
   }
   .footer-form {
-    width: 450px;
-    margin: 0 auto;
+    align-self: center;
   }
-}
-
-@media screen and (max-width: 1199px) {
+  .footer-icons {
+    margin-left: 165px;
+  }
   .unit {
     margin-bottom: 60px;
   }
   .form-mailling__mail {
+    width: 450px;
     margin-bottom: 20px;
-    max-width: 450px;
   }
   .form-mailling__icon {
     margin-left: 10px;
@@ -697,18 +698,23 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .unit {
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
   .form-mailling__mail {
     width: 358px;
     margin-right: 12px;
   }
   .footer .container {
-    justify-content: space-between;
     display: flex;
     align-items: baseline;
     margin: 0 auto;
   }
   .footer-form {
-    margin-left: 23px;
     text-align: left;
   }
   .form-mailling {
@@ -716,6 +722,7 @@ img {
   }
   .footer-icons {
     margin-left: 70px;
+    margin-right: 93px;
   }
   .unit {
     margin-bottom: 0;
