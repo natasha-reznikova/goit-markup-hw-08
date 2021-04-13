@@ -39,6 +39,7 @@
 }
 
 .mailling {
+  display: block;
   margin-bottom: 20px;
   font-family: var(--main-font);
   font-style: normal;
@@ -95,6 +96,10 @@
     padding-right: 89px;
     margin-bottom: 60px;
   }
+  .footer-form {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -104,6 +109,11 @@
 
   .form-mailling__mail {
     margin-bottom: 20px;
+    max-width: 450px;
+  }
+
+  .form-mailling__icon {
+    margin-left: 10px;
   }
 }
 
@@ -123,10 +133,6 @@
   .footer-form {
     margin-left: 23px;
     text-align: left;
-  }
-
-  .form-mailling__icon {
-    margin-left: 10px;
   }
 
   .form-mailling {

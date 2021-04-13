@@ -318,6 +318,8 @@ img {
 }
 
 .main-btn {
+  /*
+  display: block;*/
   font-family: var(--main-font);
   min-width: 200px;
   height: 50px;
@@ -325,6 +327,7 @@ img {
   line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.06em;
+  align-items: center;
   color: var(--first-text-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -347,17 +350,16 @@ img {
   padding-bottom: 10px;
 }
 
-.main-btn_footer {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
 .main-btn_modal-window {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   margin-top: 30px;
   padding: 10px 55px;
+}
+
+.main-btn__footer {
+  align-items: center;
 }
 
 .visually-hidden {
@@ -406,15 +408,16 @@ img {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 480px) {
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
   .btn-list {
     flex-wrap: wrap;
     margin-top: -15px;
     margin-bottom: 30px;
-  }
-  .portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .btn-list__text {
     margin-top: 15px;
@@ -424,6 +427,7 @@ img {
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -618,6 +622,7 @@ img {
 }
 
 .mailling {
+  display: block;
   margin-bottom: 20px;
   font-family: var(--main-font);
   font-style: normal;
@@ -672,6 +677,10 @@ img {
     padding-right: 89px;
     margin-bottom: 60px;
   }
+  .footer-form {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -680,6 +689,10 @@ img {
   }
   .form-mailling__mail {
     margin-bottom: 20px;
+    max-width: 450px;
+  }
+  .form-mailling__icon {
+    margin-left: 10px;
   }
 }
 
@@ -697,9 +710,6 @@ img {
   .footer-form {
     margin-left: 23px;
     text-align: left;
-  }
-  .form-mailling__icon {
-    margin-left: 10px;
   }
   .form-mailling {
     display: flex;
