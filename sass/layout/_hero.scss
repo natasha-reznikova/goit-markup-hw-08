@@ -6,25 +6,25 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   );
+
+  &__title {
+    margin-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.61;
+    max-width: 360px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--first-text-color);
+  }
 }
 
 .main-btn {
   display: block;
   margin: 0 auto;
-}
-
-.hero__title {
-  margin-bottom: 30px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 26px;
-  line-height: 1.61;
-  max-width: 360px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--first-text-color);
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

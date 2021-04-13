@@ -589,6 +589,10 @@ img {
   background: var(--footer-color);
 }
 
+.footer-form {
+  text-align: center;
+}
+
 .address__item:not(:first-child) {
   margin-top: 8px;
 }
@@ -644,10 +648,6 @@ img {
   background-color: var(--footer-color);
   outline: none;
   color: var(--first-text-color);
-}
-
-.footer-form {
-  text-align: center;
 }
 
 .form-mailling__mail::placeholder {

@@ -3,6 +3,10 @@
   padding-bottom: 60px;
   margin: 0 auto;
   background: var(--footer-color);
+
+  &-form {
+    text-align: center;
+  }
 }
 
 .address__item:not(:first-child) {
@@ -12,17 +16,17 @@
 .address {
   margin-top: 20px;
   width: 221px;
-}
 
-.address__link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+  &__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.address__city {
-  color: var(--first-text-color);
+  &__city {
+    color: var(--first-text-color);
+  }
 }
 
 .add-to-us {
@@ -60,10 +64,6 @@
   background-color: var(--footer-color);
   outline: none;
   color: var(--first-text-color);
-}
-
-.footer-form {
-  text-align: center;
 }
 
 .form-mailling__mail::placeholder {
