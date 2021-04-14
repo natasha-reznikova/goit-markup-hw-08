@@ -359,8 +359,8 @@ img {
 }
 
 .main-btn__footer {
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .visually-hidden {
