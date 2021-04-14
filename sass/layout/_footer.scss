@@ -42,7 +42,6 @@
 }
 
 .mailling {
-  display: block;
   margin-bottom: 20px;
   font-family: var(--main-font);
   font-style: normal;
@@ -90,14 +89,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .form-mailling__mail {
-    width: 450px;
-  }
-
   .unit {
     display: flex;
     justify-content: center;
     align-items: baseline;
+  }
+
+  .form-mailling__mail {
+    width: 450px;
   }
 
   .footer-icons {
@@ -107,7 +106,7 @@
     margin-bottom: 0;
   }
 
-  .form-mailling {
+  .footer-form {
     display: block;
   }
 }
