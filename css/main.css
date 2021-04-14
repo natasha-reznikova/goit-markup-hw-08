@@ -287,12 +287,20 @@ img {
   .contact__icon {
     margin-right: 8px;
   }
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    align-items: center;
     margin-left: auto;
+  }
+  .contact__item:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
@@ -362,6 +370,7 @@ img {
     width: 100%;
     max-height: 400px;
     background-image: url("../images/mobile/header-phone.jpg");
+    background-repeat: no-repeat;
     background-size: 480px 400px;
   }
 }
@@ -378,6 +387,7 @@ img {
     width: 100%;
     max-height: 400px;
     background-image: url("../images/tablet/header-tablet.jpg");
+    background-repeat: no-repeat;
     background-size: 768px 400px;
   }
 }
@@ -388,13 +398,15 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero {
     width: 100%;
     max-height: 600px;
     padding: 200px 0px;
+    background-repeat: no-repeat;
     background-image: url("../images/desktop/header-desktop.jpg");
     background-size: 1200px 600px;
+    background-size: cover;
   }
   .hero .container {
     text-align: center;
@@ -452,9 +464,8 @@ img {
   padding: 10px 55px;
 }
 
-.main-btn__footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.main-btn_footer {
+  margin: 0 auto;
 }
 
 .backdrop {
@@ -520,10 +531,10 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .modal-window {
-    min-height: 581px;
-    min-width: 528px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -819,6 +830,7 @@ img {
 }
 
 .member__inform {
+  width: 100%;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -845,19 +857,12 @@ img {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 767px) {
-  .member__inform {
-    width: 100%;
-  }
-  .member__foto {
-    width: 100%;
-  }
-  .member:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  .footer-icons {
-    margin-bottom: 60px;
-  }
+.member__foto {
+  width: 100%;
+}
+
+.footer-icons {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -885,9 +890,6 @@ img {
     display: flex;
     flex-wrap: nowrap;
   }
-  .member {
-    flex-basis: 270px;
-  }
   .team {
     padding-bottom: var(--section-pb);
     padding-top: var(--section-pt);
@@ -895,6 +897,28 @@ img {
   .team__list {
     justify-content: space-between;
   }
+  .member {
+    flex-basis: 270px;
+  }
+  .member__foto {
+    width: 272px;
+    height: 260px;
+  }
+  /*
+
+  .team__list {
+    display: flex;
+    margin-left: -30px;
+  }
+
+  .member {
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  */
 }
 
 .networks {
@@ -1139,9 +1163,6 @@ img {
   }
   .address {
     margin-bottom: 0;
-  }
-  .footer-form {
-    display: block;
   }
 }
 

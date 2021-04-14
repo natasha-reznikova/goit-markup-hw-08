@@ -11,6 +11,7 @@
   border-radius: 0px 0px 4px 4px;
 
   &__inform {
+    width: 100%;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -38,21 +39,12 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .member__inform {
-    width: 100%;
-  }
-  .member__foto {
-    width: 100%;
-  }
+.member__foto {
+  width: 100%;
+}
 
-  .member:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  .footer-icons {
-    margin-bottom: 60px;
-  }
+.footer-icons {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,10 +75,6 @@
     flex-wrap: nowrap;
   }
 
-  .member {
-    flex-basis: 270px;
-  }
-
   .team {
     padding-bottom: var(--section-pb);
     padding-top: var(--section-pt);
@@ -95,4 +83,28 @@
   .team__list {
     justify-content: space-between;
   }
+
+  .member {
+    flex-basis: 270px;
+  }
+
+  .member__foto {
+    width: 272px;
+    height: 260px;
+  }
+  /*
+
+  .team__list {
+    display: flex;
+    margin-left: -30px;
+  }
+
+  .member {
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  */
 }

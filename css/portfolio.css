@@ -275,12 +275,20 @@ img {
   .contact__icon {
     margin-right: 8px;
   }
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    align-items: center;
     margin-left: auto;
+  }
+  .contact__item:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
@@ -358,9 +366,8 @@ img {
   padding: 10px 55px;
 }
 
-.main-btn__footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.main-btn_footer {
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -701,9 +708,6 @@ img {
   }
   .address {
     margin-bottom: 0;
-  }
-  .footer-form {
-    display: block;
   }
 }
 

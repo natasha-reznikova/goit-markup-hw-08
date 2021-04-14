@@ -33,6 +33,7 @@
     width: 100%;
     max-height: 400px;
     background-image: url('../images/mobile/header-phone.jpg');
+    background-repeat: no-repeat;
     background-size: 480px 400px;
   }
 }
@@ -51,6 +52,7 @@
     width: 100%;
     max-height: 400px;
     background-image: url('../images/tablet/header-tablet.jpg');
+    background-repeat: no-repeat;
     background-size: 768px 400px;
   }
 }
@@ -63,13 +65,15 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero {
     width: 100%;
     max-height: 600px;
     padding: 200px 0px;
+    background-repeat: no-repeat;
     background-image: url('../images/desktop/header-desktop.jpg');
     background-size: 1200px 600px;
+    background-size: cover;
   }
 
   .hero .container {

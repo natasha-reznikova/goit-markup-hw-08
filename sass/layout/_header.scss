@@ -215,12 +215,21 @@
   .contact__icon {
     margin-right: 8px;
   }
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    align-items: center;
     margin-left: auto;
+  }
+
+  .contact__item:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
