@@ -1,3 +1,38 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .img {
+    width: 100%;
+  }
+
+  .gallary__item {
+    width: 100%;
+  }
+}
+
+.img-comment {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.images-text {
+  margin-bottom: 4px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.kind {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
 .picture {
   position: relative;
   overflow: hidden;
@@ -25,6 +60,50 @@
     transform: translateY(0);
   }
 }
+
+.gallary__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallary {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  .gallary__item {
+    display: flex;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+
+  .gallary__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallary .img-comment {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallary {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  .gallary__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/*
 
 .img-comment {
   padding-left: 24px;
@@ -84,53 +163,9 @@
   }
   */
 
-  /*
+/*
   .gallary__link {
     display: flex;
     flex-direction: column;
   }
   */
-}
-
-/*
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .gallary {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-
-  .gallary__item {
-    margin-left: 30px;
-    margin-top: 30px;
-    width: calc(100% / 2 - 30px);
-  }
-
-  .gallary__link {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-comment {
-    flex-grow: 1;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gallary {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-  }
-
-  .gallary__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-  }
-
-  .gallary__item:nth-child(-n + 6) {
-    margin-bottom: 30px;
-  }
-}
-*/
