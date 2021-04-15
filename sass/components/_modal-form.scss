@@ -96,6 +96,9 @@
   &__check {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
 
     &::before {
       display: block;
