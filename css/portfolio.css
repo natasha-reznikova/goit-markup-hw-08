@@ -87,7 +87,14 @@ img {
   justify-content: space-between;
 }
 
+.contact__item {
+  align-items: baseline;
+  justify-content: baseline;
+}
+
 .contact__link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -164,6 +171,7 @@ img {
     padding: 48px 40px;
     width: 100vw;
     height: 100vh;
+    max-width: 480px;
     z-index: 1;
     background-color: var(--first-text-color);
     transform: translateY(-100%);
@@ -370,6 +378,9 @@ img {
 
 .main-btn_footer {
   margin: 0 auto;
+  /*padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 13px;*/
 }
 
 .visually-hidden {
@@ -740,6 +751,16 @@ img {
 
 .form-mailling__mail::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.form-mailling__icon {
+  margin-left: 10px;
+}
+
+.form-mailling__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
