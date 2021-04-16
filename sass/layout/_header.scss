@@ -1,5 +1,5 @@
 .header {
-  border: 1px solid #ececec;
+  border-top: 1px solid #ececec;
   justify-content: space-between;
 }
 
@@ -95,7 +95,6 @@
     padding: 48px 40px;
     width: 100vw;
     height: 100vh;
-    max-width: 480px;
     z-index: 1;
     background-color: var(--first-text-color);
     transform: translateY(-100%);

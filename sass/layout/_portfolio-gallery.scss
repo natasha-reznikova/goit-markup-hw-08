@@ -1,11 +1,3 @@
-/*
-
-.gallary__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-*/
-
 .img-comment {
   padding-left: 24px;
   padding-right: 24px;
@@ -62,7 +54,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .gallary__item:not(:first-child) {
     margin-top: 30px;
   }
