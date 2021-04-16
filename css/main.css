@@ -687,6 +687,9 @@ img {
     font-size: 14px;
     line-height: 1.71px;
   }
+  .modal-form {
+    max-width: 528px;
+  }
 }
 
 .title {
