@@ -5,6 +5,7 @@
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
+  outline: 1px solir red;
 }
 
 .images-text {
@@ -54,16 +55,6 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .gallary__item:not(:first-child) {
-    margin-top: 30px;
-  }
-
-  img {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallary {
     display: flex;
@@ -89,7 +80,6 @@
     flex-grow: 1;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .gallary {
     display: flex;

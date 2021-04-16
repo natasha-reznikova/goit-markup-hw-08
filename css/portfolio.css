@@ -470,6 +470,7 @@ img {
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
+  outline: 1px solir red;
 }
 
 .images-text {
@@ -517,15 +518,6 @@ img {
 .gallary__item:hover .about-element {
   opacity: 1;
   transform: translateY(0);
-}
-
-@media screen and (min-width: 480px) {
-  .gallary__item:not(:first-child) {
-    margin-top: 30px;
-  }
-  img {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
