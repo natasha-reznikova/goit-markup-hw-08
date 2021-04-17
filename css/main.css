@@ -496,9 +496,8 @@ img {
 }
 
 .modal-window {
+  position: relative;
   max-width: 450px;
-  height: 609px;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -588,7 +587,7 @@ img {
   color: var(--second-text-color);
 }
 
-.modal-form__conteiner {
+.modal-form__container {
   position: relative;
   display: block;
 }
@@ -609,8 +608,6 @@ img {
 
 .modal-form__textarea {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
   align-items: center;
   width: 100%;
   padding: 12px 16px;
@@ -643,6 +640,7 @@ img {
 
 .modal-form__check {
   display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
 }
 

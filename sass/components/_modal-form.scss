@@ -45,7 +45,7 @@
     letter-spacing: 0.01em;
     color: var(--second-text-color);
   }
-  &__conteiner {
+  &__container {
     position: relative;
     display: block;
   }
@@ -66,11 +66,8 @@
   }
   &__textarea {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
     align-items: center;
     width: 100%;
-
     padding: 12px 16px;
     margin-top: 4px;
     margin-bottom: 20px;
@@ -100,6 +97,8 @@
   }
   &__check {
     display: flex;
+    flex-wrap: wrap;
+
     font-size: 14px;
 
     &::before {
