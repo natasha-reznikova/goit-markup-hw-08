@@ -1,10 +1,7 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding: 450px;
-
-  width: 100vw;
-  height: 100vh;
+  padding: 40px;
 
   &__title {
     margin-bottom: 12px;
@@ -48,7 +45,7 @@
     letter-spacing: 0.01em;
     color: var(--second-text-color);
   }
-  &__container {
+  &__conteiner {
     position: relative;
     display: block;
   }
@@ -68,7 +65,12 @@
     }
   }
   &__textarea {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
     width: 100%;
+
     padding: 12px 16px;
     margin-top: 4px;
     margin-bottom: 20px;
@@ -98,10 +100,7 @@
   }
   &__check {
     display: flex;
-    align-items: center;
-    font-size: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
+    font-size: 14px;
 
     &::before {
       display: block;
@@ -122,13 +121,6 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .modal-form {
-    width: 100vw;
-    height: 100hw;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .modal-form__check {
     font-size: 12px;
@@ -139,9 +131,5 @@
   .modal-form__check {
     font-size: 14px;
     line-height: 1.71px;
-  }
-
-  .modal-form {
-    max-width: 528px;
   }
 }

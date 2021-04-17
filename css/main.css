@@ -496,11 +496,9 @@ img {
 }
 
 .modal-window {
-  position: fixed;
-  position: absolute;
   max-width: 450px;
-  width: 100vw;
-  height: 100vh;
+  height: 609px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -534,15 +532,7 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .modal-window {
-    max-width: 450px;
-    width: 100%;
-    height: 609px;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal-window {
     max-width: 528px;
     height: 581px;
@@ -552,9 +542,7 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding: 450px;
-  width: 100vw;
-  height: 100vh;
+  padding: 40px;
 }
 
 .modal-form__title {
@@ -600,7 +588,7 @@ img {
   color: var(--second-text-color);
 }
 
-.modal-form__container {
+.modal-form__conteiner {
   position: relative;
   display: block;
 }
@@ -620,6 +608,10 @@ img {
 }
 
 .modal-form__textarea {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
   width: 100%;
   padding: 12px 16px;
   margin-top: 4px;
@@ -651,10 +643,7 @@ img {
 
 .modal-form__check {
   display: flex;
-  align-items: center;
-  font-size: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+  font-size: 14px;
 }
 
 .modal-form__check::before {
@@ -674,13 +663,6 @@ img {
   border-color: var(--accent-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .modal-form {
-    width: 100vw;
-    height: 100hw;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .modal-form__check {
     font-size: 12px;
@@ -692,9 +674,6 @@ img {
   .modal-form__check {
     font-size: 14px;
     line-height: 1.71px;
-  }
-  .modal-form {
-    max-width: 528px;
   }
 }
 
