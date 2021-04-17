@@ -354,7 +354,6 @@ img {
 .hero {
   width: 100%;
   margin: 0 auto;
-  text-align: center;
   background: var(--hero-color);
   background-repeat: no-repeat;
   background-size: cover;
@@ -580,6 +579,7 @@ img {
   margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  justify-content: start;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -683,6 +683,13 @@ img {
 .modal-form__check {
   font-size: 12px;
   line-height: 1.14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check {
+    letter-spacing: 0.01em;
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
