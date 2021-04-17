@@ -1,5 +1,5 @@
 .modal-form {
-  display: flex;
+  display: block;
   flex-direction: column;
   padding: 40px;
   /*max-width: 100%;*/
@@ -18,6 +18,12 @@
 
   &__link {
     color: var(--accent-color);
+  }
+
+  &__checking {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
   }
 
   &__input {
@@ -52,8 +58,7 @@
   }
   &__container {
     position: relative;
-    display: block;
-    flex-direction: column;
+    display: flex;
     align-items: start;
   }
 
@@ -61,10 +66,6 @@
     position: absolute;
     left: 12px;
     top: 15px;
-
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -108,6 +109,10 @@
   &__check {
     display: flex;
     align-items: center;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
     line-height: 2px;
     font-size: 14px;
 
